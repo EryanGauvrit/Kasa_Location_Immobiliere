@@ -2,8 +2,16 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: $phoneScreenSize) {
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+    @media (min-width: $desktopScreenSize) {
+        max-width: 1600px;
+        margin: auto;
+    }
 }
 
 a {

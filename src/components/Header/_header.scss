@@ -1,12 +1,13 @@
 header {
     display: flex;
     justify-content: space-between;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 15px;
     & a img{
         width: 220px;
         @media (max-width: $phoneScreenSize) {
-            width: 170px;
+            width: 150px;
         }
         @media (min-width: $desktopScreenSize) {
             width: 330px;
@@ -19,7 +20,7 @@ header {
         font-size: 30px;
         text-transform: uppercase; 
         @media (max-width: $phoneScreenSize) {
-            font-size: 20px;
+            font-size: 17px;
         } 
         @media (min-width: $desktopScreenSize) {
             font-size: 40px;
@@ -27,6 +28,9 @@ header {
         & a {
             margin-left: 20px;
             color: $colour-primary;
+            @media (max-width: $phoneScreenSize) {
+                margin-left: 10px;
+            } 
             @media (min-width: $desktopScreenSize) {
                 margin-left: 40px;
             } 
