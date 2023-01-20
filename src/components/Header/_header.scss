@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    & a img{
+        width: 220px;
+        @media (max-width: $phoneScreenSize) {
+            width: 170px;
+        }
+        @media (min-width: $desktopScreenSize) {
+            width: 330px;
+        }
+    }
+    & nav {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase; 
+        @media (max-width: $phoneScreenSize) {
+            font-size: 20px;
+        } 
+        @media (min-width: $desktopScreenSize) {
+            font-size: 40px;
+        } 
+        & a {
+            margin-left: 20px;
+            color: #FF6060;
+            @media (min-width: $desktopScreenSize) {
+                margin-left: 40px;
+            } 
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+  }
+  
+  
