@@ -23,7 +23,7 @@ root.render(
         <Route exact path="/about"
           element={<About />}
         />
-        <Route exact path="/location001"
+        <Route exact path={'/location/'}
           element={<LocationDetails />}
         />
         <Route path='*'

@@ -1,0 +1,50 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    
+    @media (min-width: $desktopScreenSize) {
+        padding: 50px;
+        background-color: $colour-tertiary;
+        border-radius: 10px;
+    }
+    & .card {
+        width: 100%;
+        min-width: 335px;
+        position: relative;
+        height: 355px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-image: $colour-card;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        @media (min-width: $desktopScreenSize) {
+            width: 340px;
+            margin-top: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        & p {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            font-size: 35px;
+            color: $colour-secondary;
+            z-index: +1;
+            @media (min-width: $desktopScreenSize) {
+                font-size: 25px;
+            }
+        }
+        & img {
+            position: absolute;
+            background-color: $colour-primary;
+            width: 100%;
+            height: 100%;   
+            @media (min-width: $desktopScreenSize) {
+                width: 130%;
+            }         
+        }
+    }
+}
