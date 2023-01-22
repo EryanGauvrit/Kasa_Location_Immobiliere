@@ -1,4 +1,3 @@
-import React from "react";
 import bannerBg from '../../assets/banner.png';
 
 function Banner() {

@@ -10,7 +10,7 @@ header {
             width: 170px;
         }
         @media (min-width: $desktopScreenSize) {
-            width: 330px;
+            width: 300px;
         }
     }
     & nav {
@@ -23,7 +23,7 @@ header {
             font-size: 20px;
         } 
         @media (min-width: $desktopScreenSize) {
-            font-size: 40px;
+            font-size: 35px;
         } 
         & a {
             margin-left: 20px;
