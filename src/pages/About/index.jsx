@@ -1,8 +1,13 @@
+import React from "react";
+import BannerAbout from "../../components/Banner-about";
+import MainAbout from "../../components/Main-about";
+
 function About() {
     return (
-        <div>
-            About
-        </div>
+        <React.Fragment>
+            <BannerAbout />
+            <MainAbout />
+        </React.Fragment>
     )
 }
 

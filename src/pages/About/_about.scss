@@ -1,0 +1,86 @@
+// Banner About
+
+.banner-about {
+    height: 223px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: url("../../assets/banner-about-phone.png");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    filter: brightness(0.7);
+    @media (min-width: $phoneScreenSize) {
+        background: url("../../assets/banner-about.png");
+        background-position: center;
+        background-size: cover; 
+        border-radius: 25px;
+        margin: 50px 0 50px 0;
+    }
+}
+
+// Collapse About
+
+.about-main {
+    width: 100%;
+    & .about-collapse {
+        margin: 30px 0;
+        max-width: 1023px;
+        & .about-collapse-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: $colour-primary;
+            color: $colour-secondary;
+            font-size: 25px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            @media (min-width: $phoneScreenSize) {
+                font-size: 35px;
+                padding: 15px 20px 15px 20px;
+            }
+        }
+        & .about-collapse-text {
+            
+            font-size: 20px;
+            color: $colour-primary;
+            background-color: $colour-tertiary;
+            border-radius: 5px;
+            padding: 30px 20px 30px 20px;
+            transition: all .5s ease-in;
+            @media (min-width: $phoneScreenSize) {
+                font-size: 30px;
+                padding: 40px 30px 40px 30px;
+            }
+        }
+    }
+}
+
+.active {
+    & .about-collapse-text{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    & i {
+        transition: .5s;
+    }
+}
+
+.false {
+    height: 70px;
+    & .about-collapse-text{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    
+    & i {
+        transform:rotate(180deg);
+        transition: 0.5s;
+    }
+}
