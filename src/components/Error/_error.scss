@@ -1,0 +1,38 @@
+.main-error {
+    color: $colour-primary;
+    text-align: center;
+    & h1 {
+        font-size: 96px;
+        margin-top: 202px;
+        @media (min-width: $phoneScreenSize) {
+            font-size: 288px;
+            margin-top: 217px;
+        }
+    }
+    & h2 {
+        font-size: 18px;
+        font-weight: 500;
+        width: 50%;
+        margin: auto;
+        @media (min-width: $phoneScreenSize) {
+            font-size: 36px;
+            width: auto;
+        }
+    }
+    & p {
+        margin-top: 133px;
+        margin-bottom: 235px;
+        @media (min-width: $phoneScreenSize) {
+            margin-top: 182px;
+            margin-bottom: 159px;
+        }
+        & a {
+            color: $colour-primary;
+            text-decoration: underline;
+            font-size: 14px;
+            @media (min-width: $phoneScreenSize) {
+                font-size: 18px;
+            }
+        }
+    }
+}
