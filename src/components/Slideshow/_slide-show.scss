@@ -1,0 +1,41 @@
+.picture-gallery {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    height: 255px;
+    @media (min-width: $phoneScreenSize) {
+        height: 415px;
+    }
+    & .picture.active{
+        width: 100%;
+        & .currentPicture-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            height: 255px;
+            border-radius: 10px;
+            background-position: center;
+            object-fit: cover;
+            background-size: cover;
+            @media (min-width: $phoneScreenSize) {
+                height: 415px;
+            }
+            & .activeChevron {
+                color: $colour-secondary;
+                font-size: 70px;
+                cursor: pointer;
+                @media (min-width: $phoneScreenSize) {
+                    font-size: 130px;
+                }
+            }
+            & .notActiveChevron {
+                display: none;
+            }
+        }
+    }
+}

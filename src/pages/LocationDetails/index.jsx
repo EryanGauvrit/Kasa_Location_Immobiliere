@@ -1,9 +1,10 @@
+import Slideshow from "../../components/Slideshow"
 
 function LocationDetails() {
     return (
-        <div>
-            LocationDetails
-        </div>
+        <main>
+            <Slideshow />
+        </main>
     )
 }
 
