@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+main, header, .banner-about {
     padding-left: 50px;
     padding-right: 50px;
     @media (max-width: $phoneScreenSize) {
