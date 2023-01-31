@@ -1,22 +1,23 @@
 // Banner About
 
 .banner-about {
+    max-width: 1240px;
     height: 223px;
-    margin: 20px 0;
+    margin-top: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     background: url("../../assets/banner-about-phone.png");
     background-position: center;
+    background-size: cover;
     object-fit: cover;
     filter: brightness(0.7);
     @media (min-width: $phoneScreenSize) {
         background: url("../../assets/banner-about.png");
-        background-position: center;
- 
         border-radius: 25px;
-        margin: 50px 0 50px 0;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -25,35 +26,44 @@
 .about-main {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 148px;
+    @media (min-width: $phoneScreenSize) {
+        margin-top: 31px;
+        margin-bottom: 170px;
+    }
     & .about-collapse {
-        margin: 15px auto;
-        width: 100%;
+        margin: auto;        
+        width: 100%;        
         max-width: 1023px;
         & .about-collapse-title {
+            height: 10px;
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             background-color: $colour-primary;
             color: $colour-secondary;
-            font-size: 25px;
+            font-size: 13px;
             padding: 10px 15px 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             @media (min-width: $phoneScreenSize) {
-                font-size: 35px;
+                height: 17px;
+                font-size: 24px;
                 padding: 15px 20px 15px 20px;
             }
         }
-        & .about-collapse-text {
-            
-            font-size: 20px;
+        & .about-collapse-text {            
+            font-size: 12px;
+            font-weight: 400;
             color: $colour-primary;
             background-color: $colour-tertiary;
             border-radius: 5px;
-            padding: 30px 20px 30px 20px;
+            padding: 17px 10px 30px 10px;
+            margin-bottom: 20px;
             transition: all .5s ease-in;
             @media (min-width: $phoneScreenSize) {
-                font-size: 30px;
+                font-size: 24px;
                 padding: 40px 30px 40px 30px;
             }
         }
@@ -72,7 +82,10 @@
 }
 
 .false {
-    height: 70px;
+    height: 50px;
+    @media (min-width: $phoneScreenSize) {
+        height: 78px;
+    }
     & .about-collapse-text{
         visibility: hidden;
         opacity: 0;        

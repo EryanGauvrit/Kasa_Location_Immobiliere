@@ -1,12 +1,15 @@
 .main-error {
     color: $colour-primary;
+    margin-top: 195px;
     text-align: center;
+    @media (min-width: $phoneScreenSize) {
+        font-size: 169px;
+    }
     & h1 {
-        font-size: 96px;
-        margin-top: 202px;
+        font-size: 96px; 
+        font-weight: 700;       
         @media (min-width: $phoneScreenSize) {
             font-size: 288px;
-            margin-top: 217px;
         }
     }
     & h2 {
@@ -14,7 +17,9 @@
         font-weight: 500;
         width: 50%;
         margin: auto;
+        margin-top: 11px;
         @media (min-width: $phoneScreenSize) {
+            margin-top: 66px;
             font-size: 36px;
             width: auto;
         }

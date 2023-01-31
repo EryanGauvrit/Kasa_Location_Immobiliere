@@ -2,49 +2,41 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: center;
-    
-    @media (min-width: $desktopScreenSize) {
+    justify-content: center;    
+    @media (min-width: $phoneScreenSize) {
+        margin-top: 41px;
         padding: 50px;
         background-color: $colour-tertiary;
-        border-radius: 10px;
+        border-radius: 25px;
+        gap: 20px;
+    }
+    @media (min-width: $desktopScreenSize) {
+        gap: 60px;
     }
     & .card {
         width: 100%;
-        min-width: 335px;
         position: relative;
-        height: 355px;
+        height: 255px;
         overflow: hidden;
         border-radius: 10px;
         background-image: $colour-card;
-        margin-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        @media (min-width: $desktopScreenSize) {
-            width: 340px;
-            margin-top: 30px;
-            margin-left: 15px;
-            margin-right: 15px;
+        margin-top: 20px;        
+        @media (min-width: $phoneScreenSize) {
+            width: 340px;            
         }
         & p {
             position: absolute;
             left: 5%;
             bottom: 5%;
-            font-size: 35px;
+            font-size: 18px;
             color: $colour-secondary;
             z-index: +1;
-            @media (min-width: $desktopScreenSize) {
-                font-size: 25px;
-            }
         }
         & img {
             position: absolute;
             background-color: $colour-primary;
             width: 100%;
-            height: 100%;   
-            @media (min-width: $desktopScreenSize) {
-                width: 130%;
-            }         
+            height: 100%;          
         }
     }
 }

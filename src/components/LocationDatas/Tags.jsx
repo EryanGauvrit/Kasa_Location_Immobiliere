@@ -8,7 +8,7 @@ function Tags({ location }) {
     ))
 
     return (
-        <React.Fragment className="tag">
+        <React.Fragment>
             {tagMap}
         </React.Fragment>
     )

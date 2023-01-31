@@ -1,38 +1,30 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: auto;
     margin-top: 20px;
-    margin-bottom: 15px;
+    @media (min-width: $phoneScreenSize) {
+        margin-top: 40px;
+    }
     & a img{
-        width: 220px;
-        @media (max-width: $phoneScreenSize) {
-            width: 170px;
-        }
-        @media (min-width: $desktopScreenSize) {
-            width: 300px;
+        width: 145px;
+        @media (min-width: $phoneScreenSize) {
+            width: 210px;
         }
     }
     & nav {
         display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 12px;
         text-transform: uppercase; 
-        @media (max-width: $phoneScreenSize) {
-            font-size: 20px;
-        } 
-        @media (min-width: $desktopScreenSize) {
-            font-size: 35px;
+        @media (min-width: $phoneScreenSize) {
+            font-size: 24px;
         } 
         & a {
-            margin-left: 20px;
+            margin-left: 10px;
             color: $colour-primary;
-            @media (max-width: $phoneScreenSize) {
-                margin-left: 10px;
-            } 
-            @media (min-width: $desktopScreenSize) {
-                margin-left: 40px;
+            @media (min-width: $phoneScreenSize) {
+                margin-left: 57px;
             } 
         }
         & a:hover {

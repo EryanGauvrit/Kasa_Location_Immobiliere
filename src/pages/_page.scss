@@ -5,14 +5,14 @@ body {
 }
 
 main, header, .banner-about {
-    padding-left: 50px;
-    padding-right: 50px;
-    @media (max-width: $phoneScreenSize) {
-        padding-left: 20px;
-        padding-right: 20px;    
+    margin-left: 20px;
+    margin-right: 20px;
+    @media (min-width: $phoneScreenSize) {
+        margin-left: 50px;
+        margin-right: 50px;    
     }
-    @media (min-width: $desktopScreenSize) {
-        max-width: 1300px;
+    @media (min-width: 1240px) {
+        max-width: 1240px;
         margin: auto;
     }
 }

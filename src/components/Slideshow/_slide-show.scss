@@ -1,7 +1,7 @@
 .picture-gallery {
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@
     height: 255px;
     @media (min-width: $phoneScreenSize) {
         height: 415px;
+        margin-top: 20px;
     }
     & .picture.active{
         width: 100%;
@@ -23,6 +24,7 @@
             object-fit: cover;
             background-size: cover;
             @media (min-width: $phoneScreenSize) {
+                border-radius: 25px;
                 height: 415px;
             }
             & .activeChevron {

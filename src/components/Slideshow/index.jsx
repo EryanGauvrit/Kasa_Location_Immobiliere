@@ -6,13 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 function Slideshow() {
     const { id } = useParams();
     const [location, setLocation] = useState({
-        pictures: [],
-        description: "",
-        host: { name: "", picture: "" },
-        rating: "",
-        location: "",
-        equipement: [],
-        tags: []
+        pictures: []
     });
 
     useEffect(() => {
@@ -38,7 +32,7 @@ function Slideshow() {
 
     /* Gestion des chevrons */
 
-    let chevron = "activeChevron"; // par défault ils sont activé
+    let chevron = "activeChevron"; // par défault ils sont activés
 
     if (picturesLength === 1) {
         chevron = "notActiveChevron";
