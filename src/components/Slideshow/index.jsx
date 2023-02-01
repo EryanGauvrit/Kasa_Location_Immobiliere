@@ -5,13 +5,15 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Slideshow() {
     const { id } = useParams();
+    // On initialise le tableau avec useState
     const [location, setLocation] = useState({
         pictures: []
     });
 
+    // On récupère les images avec .map et on les mets  dans le tableau avec useEffect
     useEffect(() => {
         locationsDatas.map((data) => {
-            if (data.id === id) {
+            if (data.id === id) { // On oublie pas de vérifier l'ID en URL avec celle du fichier JSON
                 setLocation(data);
             }
             return null;
@@ -54,6 +56,7 @@ function Slideshow() {
                                     backgroundImage: `url(${location.pictures[index]})`
                                 }}
                             >
+                                {/* On utilise les chevrons fournis par React */}
                                 <FiChevronLeft className={chevron} onClick={prevPicture} />
                                 <FiChevronRight className={chevron} onClick={nextPicture} />
 

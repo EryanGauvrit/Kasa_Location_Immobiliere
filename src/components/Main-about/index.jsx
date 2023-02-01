@@ -1,5 +1,6 @@
 import Collapse from "../Collapse";
 
+// Utilisation du composant Collapse, on complète les paramètres demandés par la fonction
 function MainAbout() {
     return (
         <main className="about-main">

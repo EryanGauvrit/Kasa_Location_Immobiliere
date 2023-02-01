@@ -26,6 +26,7 @@ root.render(
         <Route exact path={'/location/:id'}
           element={<LocationDetails />}
         />
+        {/* Pour toutes url inconnues, on affiche la page d'erreur*/}
         <Route path='*'
           element={<Error />}
         />

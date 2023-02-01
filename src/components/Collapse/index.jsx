@@ -11,6 +11,7 @@ function Collapse({ title, text, about }) {
     };
 
     return (
+        // On gère la classe en fonction de si on a cliqué dessus ou non
         <div className={`${about ? "about-collapse" : "collapse"} ${isActive && "active"}`} >
             <div className="about-collapse-title" onClick={handleToggle}>
                 <p>{title}</p>

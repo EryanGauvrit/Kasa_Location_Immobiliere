@@ -6,8 +6,12 @@ import Rate from "./Rate";
 import Collapse from "../Collapse";
 import Error from "../Error";
 
+
 function LocationDatas({ title, description }) {
+
+    // On récupère l'ID avec useParams
     const { id } = useParams();
+    // On initialise un tableau de toutes les infos utiles avec useState
     const [location, setLocation] = useState({
         host: { name: "", picture: "" },
         rating: "",
@@ -16,6 +20,7 @@ function LocationDatas({ title, description }) {
         tags: []
     });
 
+    // On utilise useEffect pour remplir le tableau et on en profite pour comparer l'ID de l'URL et celui existant dans le fichier JSON
     useEffect(() => {
         locationsDatas.map((data) => {
             if (data.id === id) {
@@ -25,10 +30,12 @@ function LocationDatas({ title, description }) {
         });
     });
 
+    // On gère les potentiels erreurs
     if (location.title === undefined) {
         return <Error />;
     }
 
+    // On initialise une variable, elle retournera la liste d'équipements avec .map
     let locationEquipment = location.equipments.map((i, index) => (
         <li className="location-equipments" key={i}>
             {location.equipments[index]}
@@ -41,6 +48,8 @@ function LocationDatas({ title, description }) {
                 <div className="location-datas-info">
                     <h1>{location.title}</h1>
                     <h2>{location.location}</h2>
+
+                    {/* Utilisation du composant Tags */}
                     <ul className="datas-info-tags">
                         <Tags location={location} />
                     </ul>
@@ -55,12 +64,14 @@ function LocationDatas({ title, description }) {
                         />
                     </div>
 
+                    {/* Utilisation du composant Rate */}
                     <div className="datas-profil-rate">
                         <Rate location={location.rating} />
                     </div>
                 </figcaption>
             </figure>
 
+            {/* Réutilisation du composant Collapse */}
             <div className="location-datas-detail">
                 <Collapse
                     about={false}
