@@ -30,7 +30,7 @@ function LocationDatas({ title, description }) {
         });
     });
 
-    // On gère les potentiels erreurs
+    // On gère les potentielles erreurs
     if (location.title === undefined) {
         return <Error />;
     }
