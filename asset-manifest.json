@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.75bad994.css",
+    "main.js": "/kasa/static/js/main.f4a4b89e.js",
+    "static/media/banner-about-phone.png": "/kasa/static/media/banner-about-phone.19051c18f1122dd25bf1.png",
+    "static/media/banner-about.png": "/kasa/static/media/banner-about.fce6fc3e9ed27433e9b0.png",
+    "static/media/banner.png": "/kasa/static/media/banner.efc1935eb81fc5e585f9.png",
+    "index.html": "/kasa/index.html",
+    "main.75bad994.css.map": "/kasa/static/css/main.75bad994.css.map",
+    "main.f4a4b89e.js.map": "/kasa/static/js/main.f4a4b89e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75bad994.css",
+    "static/js/main.f4a4b89e.js"
+  ]
+}
