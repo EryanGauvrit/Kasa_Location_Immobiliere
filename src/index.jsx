@@ -20,6 +20,9 @@ root.render(
         <Route exact path="/"
           element={<Home />}
         />
+        <Route exact path="/kasa"
+          element={<Home />}
+        />
         <Route exact path="/about"
           element={<About />}
         />
